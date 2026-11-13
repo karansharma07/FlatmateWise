@@ -1,5 +1,5 @@
 const key='wiselabs-journeys-v1';
-const personas={buyer:'Arjun · Buyer',seller:'Meera · Seller',seeker:'Rohan · Seeking flatmate',host:'Ananya · Hosting flatmate'};
+const personas={buyer:'Arjun · Buyer',seller:'Meera · Seller',seeker:'Rohan · Seeking flatmate',host:'Ananya · Hosting flatmate',dev:'Dev · Hosting flatmate',jamie:'Jamie · Hosting flatmate'};
 let state;
 try{state=JSON.parse(localStorage.getItem(key));}catch{}
 state??={actor:'buyer',requests:[],messages:[],listings:[]};
@@ -18,23 +18,28 @@ function field(form,label,type='text',value=''){
 const l=node('label',label),input=node('input');input.type=type;input.value=value;input.required=true;l.append(input);form.append(l);return input;
 }
 function mine(){return state.requests.filter(r=>r.from===actor||r.to===actor);}
-export function startRequest(title,kind){
-if((kind==='flatmate'&&actor!=='seeker')||(kind==='property'&&actor!=='buyer')){
-const {content}=modal('Choose the requesting persona');
-content.append(node('p','Use the persona selector to become '+(kind==='flatmate'?personas.seeker:personas.buyer)+', then send this request.'));
+export function startRequest(title,kind,options={}){
+const requester=kind==='flatmate'?'seeker':'buyer';
+if(actor!==requester){
+const {d,content}=modal('Continue as '+personas[requester]);
+content.append(node('p','This demo request will appear in the recipient’s inbox.'));
+content.append(action('Switch and continue',()=>{
+actor=requester;select.value=actor;persist();d.close();startRequest(title,kind,options);
+}));
 return;
 }
-if(mine().some(r=>r.title===title&&r.status!=='declined'&&r.status!=='cancelled')){
+if(mine().some(r=>(options.id && r.listingId ? r.listingId===options.id : r.title===title)&&r.status!=='declined'&&r.status!=='cancelled')){
 workspace();return;
 }
 const {d,content}=modal(kind==='flatmate'?'Introduce yourself':'Enquire about this home');
 const form=node('form'),message=field(form,'Your introduction');
-message.maxLength=1000;message.value=kind==='flatmate'?'Hi, I would love to learn more about your household.':'Hi, is this home available for a viewing?';
+message.maxLength=1000;message.value=options.message??(kind==='flatmate'?'Hi, I would love to learn more about your household.':'Hi, is this home available for a viewing?');
 form.append(node('button','Send request'));
 form.onsubmit=e=>{
 e.preventDefault();
-const r={id:crypto.randomUUID(),title,kind,from:actor,to:kind==='flatmate'?'host':'seller',status:'pending',slot:null};
-state.requests.push(r);state.messages.push({request:r.id,from:actor,text:message.value});
+const r={id:crypto.randomUUID(),title,kind,listingId:options.id,from:actor,to:kind==='flatmate'?(options.receiver??'host'):'seller',status:'pending',slot:null};
+if(!message.value.trim()) return;
+state.requests.push(r);state.messages.push({request:r.id,from:actor,text:message.value.trim()});
 persist();d.close();workspace();
 };content.append(form);
 }

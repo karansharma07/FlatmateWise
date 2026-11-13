@@ -1,0 +1,35 @@
+.housing-assistant {
+  background: #f4f6ee;
+  border: 1px solid #dce4d6;
+  border-radius: 24px;
+  padding: clamp(20px, 4vw, 40px);
+  margin: 0 0 30px;
+}
+.housing-assistant-compact {margin: 24px 0 0; border-radius: 18px;}
+.housing-assistant h2, .housing-assistant h3 {margin: 0 0 10px; color: #173d30;}
+.housing-assistant h2 {font: 400 clamp(24px, 3.2vw, 38px) Georgia, serif;}
+.housing-assistant p {color: #40574b;}
+.housing-assistant .assistant-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 10px;
+  padding: 0;
+  margin: 20px 0 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.housing-assistant .assistant-form label {margin: 0;}
+.housing-assistant button {min-height: 42px;}
+.assistant-examples, .assistant-filters {display: flex; flex-wrap: wrap; gap: 8px;}
+.housing-assistant .assistant-secondary {background: #fff; color: #254a38; border: 1px solid #c5d6c7;}
+.housing-assistant > .assistant-secondary {margin-top: 14px;}
+.assistant-filters {padding: 0; list-style: none;}
+.assistant-filters li {background: #fff; border-radius: 16px; padding: 5px 10px; color: #254a38;}
+.assistant-output {white-space: pre-line;}
+.assistant-output:empty, .housing-assistant p[role="status"]:empty {display: none;}
+@media(max-width: 520px) {
+  .housing-assistant .assistant-form {grid-template-columns: 1fr;}
+  .housing-assistant button {text-align: left;}
+}

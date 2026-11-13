@@ -22,6 +22,9 @@ const money = value => {
 };
 const digest = token => createHash('sha256').update(token).digest('hex');
 const assets = {'/entry.js':['entry.js','text/javascript'],'/':['index.html','text/html'],'/app.js':['app.js','text/javascript'],'/market.js':['market.js','text/javascript'],'/style.css':['style.css','text/css']};
+for (const asset of ['showcase.js','showcase-homes.js','journeys.js','housing-assistant.js','neighbourhood-data.js','showcase.css','housing-assistant.css']) {
+  assets['/'+asset]=[asset,asset.endsWith('.css')?'text/css':'text/javascript'];
+}
 
 export function createApp({file='flatmate.sqlite', origin='http://localhost:3000', adminEmail, dubaiListings=false}={}) {
   const secure = new URL(origin).protocol === 'https:';
@@ -65,7 +68,7 @@ export function createApp({file='flatmate.sqlite', origin='http://localhost:3000
     res.setHeader('Cache-Control','no-store');
     res.setHeader('X-Content-Type-Options','nosniff');
     res.setHeader('Referrer-Policy','no-referrer');
-    res.setHeader('Content-Security-Policy',"default-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
+    res.setHeader('Content-Security-Policy',"default-src 'self'; img-src 'self' https://images.unsplash.com; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
     try {
       const url = new URL(req.url,origin);
       const method = req.method;
