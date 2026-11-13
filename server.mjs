@@ -21,7 +21,7 @@ const money = value => {
   return value;
 };
 const digest = token => createHash('sha256').update(token).digest('hex');
-const assets = {'/':['index.html','text/html'],'/app.js':['app.js','text/javascript'],'/market.js':['market.js','text/javascript'],'/style.css':['style.css','text/css']};
+const assets = {'/entry.js':['entry.js','text/javascript'],'/':['index.html','text/html'],'/app.js':['app.js','text/javascript'],'/market.js':['market.js','text/javascript'],'/style.css':['style.css','text/css']};
 
 export function createApp({file='flatmate.sqlite', origin='http://localhost:3000', adminEmail, dubaiListings=false}={}) {
   const secure = new URL(origin).protocol === 'https:';
