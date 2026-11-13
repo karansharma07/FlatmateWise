@@ -2,6 +2,7 @@ import {markets,intents,localityMatches} from './market.js';
 const nav=document.querySelector('#nav');
 const view=document.querySelector('#view');
 const notice=document.querySelector('#notice');
+const pagesHost=location.hostname.endsWith('.github.io');
 let me,config,page='Discover',market,peer,area='';
 let destination='India',city='Bengaluru',intent='Find flatmates',query='',searched=false,continueToRooms=false;
 const el=(tag,text,cls)=>{
@@ -120,7 +121,8 @@ function marketplace(){
     para('This category is planned. You can explore neighbourhoods today.',results);
     return;
   }
-  if(city==='Dubai'&&!config.dubaiListings) para('Dubai room publication is closed. Set up a Dubai profile to discover flatmates.',results);
+  if(pagesHost) para('The public preview includes neighbourhood discovery. Run the full app to browse rooms or connect with flatmates.',results);
+  else if(city==='Dubai'&&!config.dubaiListings) para('Dubai room publication is closed. Set up a Dubai profile to discover flatmates.',results);
   else actions(results,button(me?'Browse reviewed rooms':'Sign in to browse rooms',async()=>{
     market=city;area=query;continueToRooms=!me;
     page=me?'Rooms':'Sign in';
@@ -135,6 +137,7 @@ async function render(){
   marketplace();
   nav.replaceChildren();
   view.replaceChildren();
+  if(pagesHost) return;
   if(!me){
     heading(page==='Create account'?'Create your account':'Welcome to Flatmate');
     const register=page==='Create account';
@@ -259,4 +262,4 @@ async function render(){
     }
   }
 }
-await act(async()=>{config=await api('config');await refresh();await render();});
+await act(async()=>{if(!pagesHost){config=await api('config');await refresh();}await render();});
