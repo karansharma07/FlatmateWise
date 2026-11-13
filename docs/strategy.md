@@ -1,0 +1,71 @@
+# Market, regulatory and launch strategy
+
+Research snapshot · 13 November 2026
+
+## Market and competitive positioning
+
+Dubai reported 4.58 million residents at year-end 2025, up 7.5% on its revised population series. CBRE reported 82.6 million square feet of Indian office leasing in 2025, led by Bengaluru, Mumbai and Delhi-NCR. These figures support testing newcomer and job-relocation demand. Size the actual flatshare market separately with partner vacancy counts and renter cohorts. [Digital Dubai population release](https://www.digitaldubai.ae/newsroom/news/dubai-digital-dubai%27s-population-tops-4.580-million-by-the-end-of-2025-recording-7.5-growth) · [CBRE India office figures](https://www.cbre.ae/insights/figures/india-office-figures-q4-2025)
+
+| Competitor | Observed offering | Product implication |
+| --- | --- | --- |
+| [Find Rooms](https://www.findrooms.ae/about) | UAE room classifieds covering several types of shared accommodation and advertising verification | Make the precise checks and their dates visible |
+| [BedFlow](https://www.bedflow.ae/) | Dubai beds, rooms, whole flats and flatmates | Win on usable private-room supply and a low-friction mutual introduction |
+| [FlatMate.in](https://www.flatmate.in/) | Rooms, PGs, flatmates and adjacent tenancy services across Indian cities | Start with concentrated neighbourhood coverage and measure conversion |
+| [Roomies India](https://www.roomies.co.in/) | Room inventory and flatmate discovery | Offer a repeatable process from introductions to viewings |
+| [Flatmates.co.in](https://www.flatmates.co.in/) | Presents compatibility scores and detailed household filters | Explain scores and measure whether shared habits predict better outcomes |
+
+Launch hypothesis. Start with adult relocating professionals and existing households filling a private bedroom. In Bengaluru, recruit initial supply in HSR/Koramangala and Whitefield using building-level partners and employer relocation channels. In Dubai, validate interest separately and open inventory only with legally cleared operators. Validate Mumbai and Pune next under a Maharashtra policy pack, then Hyderabad under a Telangana pack. Application city choices are for local evaluation.
+
+Run 15 interviews per side in each initial city and a concierge cohort. Track approved live rooms per neighbourhood, time to first relevant introduction, mutual-interest conversion, viewings attended, and move-ins mutually confirmed. Measure weekly incident rates per 100 conversations and post-move-in satisfaction at day 30. Pilot targets are hypotheses: 30 approved rooms per launch cluster, a median of seven days to first qualified introduction, and urgent report triage within one staffed hour. Define the service window before promising an SLA. Derive market size from annual room turnovers × reachable supply share × completed introductions, and revenue from paid conversion and realized price. Avoid extrapolating from national urban population.
+
+## Dubai release gate
+
+Dubai Law No. 4 of 2026 specifically regulates shared housing. The official announcement describes coverage of owners, tenants and licensed establishments, occupancy and permit requirements, and municipal and land department responsibilities. The Arabic gazette is controlling. The earlier tenancy framework and DLD guidance address written landlord consent and co-occupants. Co-occupant registration provides no separate Ejari certificate. Counsel must reconcile the newer shared-housing rules, their commencement and transitional provisions, and implementing decisions with each proposed flow. [Dubai official gazette](https://dlp.dubai.gov.ae/Legislation%20Ar%20Reference/2026/%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%B1%D9%82%D9%85%20%284%29%20%D9%84%D8%B3%D9%86%D8%A9%202026%20%D8%A8%D8%B4%D8%A3%D9%86%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%20%D8%A5%D8%B4%D8%BA%D8%A7%D9%84%20%D9%88%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%83%D9%86%20%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83.html) · [Dubai government announcement](https://pddportalstg.dubai.gov.ae/en/media-listing/news-events/mohammed-bin-rashid-issues-law-regulating-management-occupancy-of-shared-housing-in-dubai/) · [DLD tenancy legislation](https://dubailand.gov.ae/media/3ighwsbj/legislation.pdf) · [DLD FAQ](https://dubailand.gov.ae/en/frequently-asked-questions/)
+
+Before any public launch, obtain a written assessment covering WiseLabs trade activity, matchmaking versus brokerage, operator onboarding, advertising permit scope and display, municipality zoning and occupancy, the underlying lease/management authority, and recordkeeping. Hold self-serve tenant inventory, partitions and bedspace inventory. Require a verified operator, authority chain, building/unit permit and capacity, and any applicable ad permit before publishing a pilot listing. Store permit expiries and revoke publication when any prerequisite lapses. Review Dubai matching separately for cases where profiles advertise paid rooms. The prototype operator gate is an engineering safeguard and does not itself check any official register.
+
+## India release gate
+
+The central Model Tenancy Act is a model for adoption. Commission a per-city checklist for applicable tenancy law, agreement type, stamp duty and registration, landlord authority to add occupants, local police procedures, building or society rules, and whether WiseLabs activity triggers licensing, consumer or intermediary obligations. Maharashtra section 55 requires covered leave-and-license or letting agreements to be written and registered. Use separate approvals for Bengaluru, Mumbai, Pune and Hyderabad. The duration of an agreement alone is insufficient to decide whether it needs registration. [Model Tenancy Act](https://www.mohua.gov.in/upload/uploadfiles/files/Model-Tenancy-Act-English-02_06_2021.pdf) · [Maharashtra Rent Control Act](https://old-lj.maharashtra.gov.in/Site/Upload/Acts/Mah_Act_No_18_of_2000_19_11_2025.pdf)
+
+## Privacy and business model
+
+Map the operating entities, purposes, lawful bases, processors, cross-border transfers, deletion schedules and incident reporting before onboarding real members. UAE federal PDPL applies subject to scope and exclusions, with separate regimes to check where relevant. India’s DPDP framework has phased commencement. The notified rules distinguish immediate, one-year and 18-month provisions. Validate the applicable date for each duty against the current Gazette and implement notice, data rights and incident operations before launch. Avoid raw identity documents in the marketplace. [UAE PDPL](https://uaelegislation.gov.ae/en/legislations/1972/download) · [MeitY rules and enforcement timeline](https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digital-Personal-Data-Protection-Rules-2025%3B)
+
+Keep basic discovery, messaging, reports and blocking free. Test operator subscriptions for inventory workflows and optional fixed-fee concierge matching after scope, taxes, refunds, disclosures and payment provider review. Make verification criteria uniform, including for paying partners. Test prices through interviews and willingness-to-pay experiments before charging. Track contribution per paying account after reviewer minutes, identity-provider costs, support, refunds and acquisition. Defer deposits, rent collection, success commissions and escrow pending separate legal and operational design.
+
+## WiseLabs marketplace expansion
+
+Build one housing marketplace under WiseLabs, with FlatmateWise as its named compatibility and shared-living experience. Users enter through four clear intents: Find a flatmate, Rent a home, Buy a home, and Find a short stay. Searching for a room or joining a household connects to FlatmateWise. Whole-home renters and buyers can skip the compatibility profile. Short stays use their own dates, total-price and cancellation model. Start with housing, and consider other local classifieds once housing has repeatable neighbourhood liquidity and moderation capacity.
+
+Use one responsive web product and a shared application stack. Give India and Dubai dedicated market URLs, search indexes or explicit market-scoped queries, policy versions, inventory, currencies, locales and release controls. A user can switch their destination without rebuilding their account. Review cross-border account data access before offering it. Consider separate app binaries if distribution, operating entity or privacy requirements justify them. A shared codebase can support either packaging decision.
+
+### The first search experience
+
+Ask where the user wants to live and what they want to do. In a Bengaluru rental search, let them start with a locality, landmark or workplace, then compare realistic commute options, total move-in cost and listing freshness. Keep neighbourhood pages useful even when supply is thin. Show rent, deposit, fees and availability in consistent positions. Preserve search state when opening a result or switching between map and list. Prompt for an account when the user saves or contacts a listing. FlatmateWise adds household habits, mutual interest and a private viewing handoff.
+
+In Dubai, surface local area names, AED pricing and Arabic/English support as the market warrants. Use verified permit and operator metadata for eligible inventory and gate each category independently. A room for a week belongs in short stays. A household looking for a new resident belongs in FlatmateWise. Exclude informal short-stay inventory until the operating model, relevant permissions and accommodation provider eligibility are cleared locally. Start by evaluating referrals to eligible providers. In India, clear state and local accommodation obligations before taking direct short-stay bookings. Treat purchase listings as a separate launch with its own seller authority, project and advertising checks.
+
+### Rollout and trust
+
+Start in Bengaluru with flatmates and private rooms, and seed supply with landlords and relocation partners. Add a tightly scoped set of whole-home rentals once the team can keep vacancies current and support viewings. Test the reported reliance on Facebook and WhatsApp through interviews and observed search journeys. Track stale listings, time to a verified viewing, and cases where renters encounter an undisclosed fee. Use those outcomes to decide when to add neighbourhoods and categories. Open Dubai categories independently after approval and inventory validation.
+
+Trust markers should describe a specific completed check: contact ownership, right to advertise, availability confirmation, or applicable permit. Show the date checked. Provide duplicate detection, simple reporting, and a fast takedown path. Benchmark time to first relevant result and number of taps to request a viewing on a small phone. Keep general classifieds as a later product decision with separate fraud and fulfilment requirements.
+
+This expansion is a product direction. The current app continues to implement shared-living workflows, with whole-home rentals, purchase and short stays outside its current scope.
+
+### Living ecosystem vision
+
+Use WiseLabs Living as the working umbrella name pending brand clearance. Retain FlatmateWise as a compatibility-led experience. One account can support the sequence from a permitted short stay to a flatmate search, a joint rental and eventually a purchase. Identity, location, trust, messaging, support and future authorised payments are shared platform capabilities. Model properties, rooms, profiles and stay offers separately. Scope sensitive records and access by market policy.
+
+Build differentiated search with explicit, editable filters. A future conversational query can suggest furnished, two bedrooms, a budget ceiling and covered parking, while leaving an unverified commute estimate visibly unresolved. Compare itemised rent, deposit, maintenance and agency charges. For India, prioritise locality, society, landmark, BHK and carpet area. For Dubai, prioritise community, tower, annual whole-home rent, payment schedule and English/Arabic. Short stays require independently cleared inventory and booking workflows. Follow housing with moving services, furniture and household needs. Evaluate broader classifieds once category-specific supply and fraud operations are in place.
+
+The prototype now offers a signed-out neighbourhood directory, a market and city selector, and four intent entry points. A small curated list supports name matching. The FlatmateWise entry carries the selected city and neighbourhood into authenticated reviewed-room search. Property rentals, buying and stays currently provide neighbourhood exploration and indicate their planned status. Conversational search, maps, cost breakdowns, viewings, payments and separate property/stay data models remain roadmap work.
+
+### Scale the housing journey
+
+The long-term product is a place to plan a move and carry it through. Discovery starts with the user's intent and destination. A future move workspace brings together saved homes, household shortlists, shared comparisons, viewing appointments and a move-in checklist. A person relocating can return to the same workspace as their needs change from a temporary stay to a long-term home. Sharing and notifications are opt-in.
+
+Use the same screen hierarchy across markets. Intent and destination come first, followed by comparable results and one clear next action. Reveal additional details when the user needs them. Make listing freshness, the total cost, and the scope of any checks visible at the point of decision. Keep empty states specific to the user's search and preserve selections when they return from a result. Evaluate task completion on small phones and with assistive technology.
+
+Scale in stages. Establish neighbourhood liquidity and reviewer capacity in Bengaluru. Run a controlled Dubai pilot in parallel once approved. Add property, stays and moving services as separate workflows with their own supply and trust requirements. Expand only when the current market can consistently deliver fresh inventory, qualified introductions and completed viewings. The prototype now makes the four intents visible on the home screen. The move workspace and the additional transaction workflows are planned.
