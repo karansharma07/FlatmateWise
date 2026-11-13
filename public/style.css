@@ -25,3 +25,4 @@ body{background:#faf9f6;color:#24342b}header{max-width:1440px;padding-block:24px
 .journey-grid span{display:block;font-weight:400;font-size:14px;color:#526457;margin-top:12px}
 @media(max-width:700px){.fit-panel{grid-template-columns:1fr;padding:24px}.journey-grid{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.persona-bar{max-width:1296px;margin:0 auto 8px;padding:12px 24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#edf1e8;border-radius:16px}.persona-bar label{margin:0;font-size:11px;min-width:210px}.persona-bar button{background:white;color:#264632;border:1px solid #d1dbc9}.persona-bar+p{text-align:center;margin-bottom:20px}.workspace-dialog{min-width:min(90vw,620px)}.workspace-dialog .card{margin:15px 0}.workspace-dialog .card button{margin:8px 8px 0 0}.workspace-dialog form{margin:18px 0}.workspace-dialog .detail-copy{padding-top:64px}

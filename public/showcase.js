@@ -1,3 +1,4 @@
+import {startRequest} from './journeys.js';
 const root=document.querySelector('main');
 const locations={Bengaluru:['Indiranagar','HSR Layout','Whitefield'],Dubai:['Dubai Marina','Business Bay','Jumeirah Lakes Towers']};
 let city='Bengaluru',category='Flatmates',saved=new Set(),onlySaved=false;
@@ -99,7 +100,7 @@ modal.querySelector('.detail-copy').prepend(explanation);
 modal.querySelector('label').remove();
 }
 document.body.append(modal);modal.querySelector('.close').onclick=()=>modal.close();modal.addEventListener('close',()=>modal.remove());
-modal.querySelector('#request').onclick=()=>{modal.querySelector('#response').textContent='Demo request recorded for this preview. No message has been sent.';};
+modal.querySelector('#request').onclick=()=>{modal.close();startRequest(title,person?'flatmate':'property');};
 modal.showModal();
 }
 document.querySelector('header').innerHTML='<a class="brand" href="./">◒ WiseLabs <small>Living</small></a><span class="demo-label">Investor preview</span>';
